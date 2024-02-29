@@ -1,12 +1,10 @@
-package org.jsp.Abstraction;
-
-public interface Employee 
+interface Employee 
 {
 	void behavior();
 	void pressure();
 }
 
-public class Employee_Implementation_Class  implements Employee
+class Employee_Implementation_Class  implements Employee
 {
 	@Override
 	public void behavior() 
@@ -19,7 +17,19 @@ public class Employee_Implementation_Class  implements Employee
 	{
 		System.out.println("Companies are giving more pressure to Employees");
 	}
+
+			
+	public static void main(String[] args) 
+	{
+		Employee e1  = new Employee_Implementation_Class();
+		e1.behavior();
+		e1.pressure();
+		
+	}
+
 	
 
 }
+
+
 
